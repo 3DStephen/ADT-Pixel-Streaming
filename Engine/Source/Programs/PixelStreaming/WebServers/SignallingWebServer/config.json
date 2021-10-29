@@ -18,6 +18,6 @@
 	"httpPort": 80,
 	"httpsPort": 443,
 	"streamerPort": 8888,
-	"unrealAppName": "PixelStreamingDemo",
+	"unrealAppName": "DigitalTwinProject",
 	"region": ""
 }

@@ -7,12 +7,12 @@
 
 #CHANGE: Set your forked path here for your GitHub repo (and be sure to check in changes as scripts pull resources from GitHub)
 variable "gitpath" {
-  default = "https://github.com/Azure/UnrealEngine.git"
+  default = "https://github.com/3DStephen/ADT-Pixel-Streaming"
 }
 
 #The name of the Unreal 3D App, (i.e., PixelStreamingDemo.exe without the .exe at the end)
 variable "pixel_stream_application_name" {
-  default = "PixelStreamingDemo"
+  default = "DigitalTwinProject"
 }
 
 #Resolution width and height for the 3D App to run (smaller resolutions can fit more streams per GPU and/or a higher FPS)
