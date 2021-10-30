@@ -16,7 +16,7 @@ deployment_regions = {
   },
   
   centralindia-unreal-rg = {
-    location                = "centralindia"
+    location                = "japaneast"
     vnet_address_space      = "10.102.0.0/16"
     subnet_address_prefixes = "10.102.0.0/22"
   },
