@@ -15,7 +15,7 @@
 	"scalingEvaluationInterval": 30,
 	"enableLifecycleManagement": false,
 	"version": 1,
-	"enableAutoScale": true,
+	"enableAutoScale": false,
 	"scaleDownByAmount": 1,
 	"minMinutesBetweenScaledowns": 60,
 	"region": ""
