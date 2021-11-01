@@ -1,5 +1,4 @@
 {
-	"version": 1,
 	"UseFrontend": false,
 	"UseMatchmaker": true,
 	"UseHTTPS": false,
@@ -8,6 +7,8 @@
 	"HomepageFile": "player.htm",
 	"AdditionalRoutes": {},
 	"EnableWebserver": true,
+	"enableLifecycleManagement": false,
+	"version": 1,
 	"matchmakerAddress": "",
 	"matchmakerPort": "9999",
 	"publicIp": "localhost",
