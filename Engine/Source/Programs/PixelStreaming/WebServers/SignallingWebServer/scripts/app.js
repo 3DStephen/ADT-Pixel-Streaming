@@ -1144,7 +1144,8 @@ function registerMouseEnterAndLeaveEvents(playerElement) {
 // A locked mouse works by the user clicking in the browser player and the
 // cursor disappears and is locked. The user moves the cursor and the camera
 // moves, for example. The user presses escape to free the mouse.
-function registerLockedMouseEvents(playerElement) {
+
+ function registerLockedMouseEvents(playerElement) {
 	var x = playerElement.width / 2;
 	var y = playerElement.height / 2;
 
@@ -1209,12 +1210,13 @@ function registerLockedMouseEvents(playerElement) {
 	};
 }
 
+
 // A hovering mouse works by the user clicking the mouse button when they want
 // the cursor to have an effect over the video. Otherwise the cursor just
 // passes over the browser.
 function registerHoveringMouseEvents(playerElement) {
-	styleCursor = 'none';   // We will rely on UE4 client's software cursor.
-	//styleCursor = 'default';  // Showing cursor
+	//styleCursor = 'none';   // We will rely on UE4 client's software cursor.
+	styleCursor = 'default';  // Showing cursor
 
 	playerElement.onmousemove = function (e) {
 		emitMouseMove(e.offsetX, e.offsetY, e.movementX, e.movementY);
@@ -1565,5 +1567,7 @@ function load() {
 	setupHtmlEvents();
 	setupFreezeFrameOverlay();
 	registerKeyboardEvents();
+	inputOptions.controlScheme = ControlSchemeType.HoveringMouse;
+	inputOptions.fakeMouseWithTouches = true;
 	start();
 }
