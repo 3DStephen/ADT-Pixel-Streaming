@@ -14,13 +14,13 @@ deployment_regions = {
     vnet_address_space      = "10.101.0.0/16"
     subnet_address_prefixes = "10.101.0.0/22"
   },
-  
+  /*
   japaneast-unreal-rg = {
     location                = "japaneast"
     vnet_address_space      = "10.102.0.0/16"
     subnet_address_prefixes = "10.102.0.0/22"
   },
-
+*/
   europe-unreal-rg = {
     location                = "westeurope"
     vnet_address_space      = "10.103.0.0/16"
