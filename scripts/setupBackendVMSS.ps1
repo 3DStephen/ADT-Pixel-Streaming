@@ -142,6 +142,8 @@ logmessage "Starting a Choco Upgrade All"
 choco upgrade all -y --no-progress
 logmessage "Completed the Choco Upgrade All"
 
+$fps=30
+
 #Add FPS to Engine.ini if FPS is set to > -1
 if ($fps -gt -1) {
   logmessage "Start - Adding FPS config to Engine.ini"
